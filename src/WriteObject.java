@@ -10,7 +10,7 @@ public class WriteObject {
     public static void main(String[] args) {
 
         Person [] people = {new Person(1,"Mark"),new Person(2,"Oleg"),
-                             new Person(3,"Taras"),new Person(1,"Olia")};
+                             new Person(3,"Taras"),new Person(4,"Olia")};
 
         try {
              FileOutputStream fileOutputStream = new FileOutputStream("people.bin");
@@ -35,6 +35,7 @@ public class WriteObject {
 
             }
             /**------------------- Запис почергово обєктів Person в файл "people.bin" ------------------**/
+
             fileOutputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
